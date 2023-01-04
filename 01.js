@@ -11,7 +11,11 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-
+	const arr = []
+	array.map(e => {
+		if( !isNaN(e) ) arr.push(parseInt(e))
+	})
+	return arr
 }
 
 // No modifiques nada debajo de esta linea //
